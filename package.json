@@ -1,0 +1,32 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "description": "nodejs API with Express and MySQL",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start.dev": "cross-env NODE_ENV=dev nodemon src/index.js",
+    "start.prod": "cross-env NODE_ENV=prod node src/index.js"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "MySql",
+    "API"
+  ],
+  "author": "arsyadal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ip": "^2.0.1",
+    "mysql": "^2.18.1",
+    "pino": "^8.20.0",
+    "pino-pretty": "^11.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0"
+  }
+}
